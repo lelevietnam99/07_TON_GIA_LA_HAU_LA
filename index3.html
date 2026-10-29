@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôn Giả La Hầu La – Vị Sa Di Đầy Giới Hạnh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: #e0e6ed;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Hiệu ứng nền vũ trụ & tinh vân */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #87ceeb, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 230px 190px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 300px, #ffd700, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 350px 350px;
+            opacity: 0.7;
+            animation: stars-animation 100s linear infinite;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vh;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.1) 40%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes stars-animation {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+
+        /* Khung nội dung Glassmorphism */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 850px;
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6),
+                        0 0 30px rgba(212, 175, 55, 0.15);
+        }
+
+        h1 {
+            color: #f3e5ab;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 12px rgba(243, 229, 171, 0.4);
+            border-bottom: 1px solid rgba(243, 229, 171, 0.3);
+            padding-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #f1f5f9;
+            text-indent: 30px;
+        }
+
+        .quote {
+            text-indent: 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: #fce7f3;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 1rem;
+                text-indent: 20px;
+            }
+            .quote {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="container">
+        <h1>III. TÔN GIẢ LA HẦU LA – VỊ SA DI ĐẦY GIỚI HẠNH</h1>
+        
+        <p>Hoàng tôn La Hầu La xuất gia và là vị sa di đầu tiên trong Tăng đoàn của Đức Phật. Từ một vị Hoàng tôn trong cung vàng điện ngọc, giờ đây Ngài hoan hỷ tri túc với nếp sống xuất gia giản dị của một vị khất sĩ. Ngài hòa vào đời sống của Tăng đoàn nhẹ nhàng và tự nhiên như trở về mái ấm thân quen của mình. Ngài khiêm cung, luôn biết lắng nghe và vâng lời chỉ bảo của các vị chư Tăng. Ngài giữ giới luật tinh nghiêm và hăng hái chuyên cần tu học. Đức Phật có lần ngợi khen trước đại chúng rằng không chỉ hiện tại mà trong các tiền kiếp, Ngài La Hầu La đã có các phẩm hạnh cao quý đặc biệt như thế.</p>
+        
+        <p>Mỗi sáng tinh mơ khi sương còn đọng trên cành lá, Tôn giả La Hầu La đã dậy thật sớm, quét dọn tỉnh xá tỉnh tươm. Rồi Ngài tới phía hàng trúc nơi khóm bồ câu tím biếc đang nở rộ, đưa lên một nắm cát trên tay rồi thì thầm:</p>
+        
+        <p class="quote">Nguyện rằng ngày hôm nay con sẽ học được thật nhiều lời dạy của các Thầy như nắm cát này!</p>
+        
+        <p>Ngài tung nắm cát lên, hàng ngàn hạt cát lấp lánh bay trong gió cũng tinh khôi như ước nguyện và lòng quyết tâm của vị sa di nhỏ tuổi.</p>
+        
+        <p>Ngài La Hầu La luôn cảm thấy may mắn và trân trọng khi được nhận Tôn giả Xá Lợi Phất là giáo thọ sư cũng như là vị thầy tế độ. Mỗi lần được đến tinh xá Kỳ Viên (Jetavana) đảnh lễ hay khi Tôn giả Xá Lợi Phất trở về sau những chuyến Phật sự dài ngày, Ngài La Hầu La thường rất xúc động. Ngài tâm sự với Tôn giả Xá Lợi Phất rằng Ngài thật thiệt thòi vì ít có cơ hội để tham vấn Tôn giả thường xuyên. Tôn giả Xá Lợi Phất lại nở nụ cười hiền từ:</p>
+        
+        <p class="quote">Này La Hầu La, Ta luôn yên tâm vì con rất ngoan và được thân cận Tôn giả Nan Đà (Nanda). Ngài là một vị A La Hán trầm tĩnh nhưng luôn âm thầm tác thành những điều cao quý. Sau này con cũng vậy, con sẽ làm được nhiều điều cao quý mà ít ai biết.</p>
+        
+        <p>Năm tròn mười tám tuổi, Ngài La Hầu La được Thế Tôn cho phép Ngài trở thành vị Tỳ kheo trẻ tuổi nhất của Tăng đoàn trong sự mừng vui của cả đại chúng.</p>
+    </div>
+
+</body>
+</html>

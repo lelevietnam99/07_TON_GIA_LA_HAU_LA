@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôn Giả La Hầu La – Tình Cảm Thiêng Liêng</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: #e0e6ed;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Hiệu ứng nền vũ trụ & tinh vân */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #87ceeb, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 230px 190px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 300px, #ffd700, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 350px 350px;
+            opacity: 0.7;
+            animation: stars-animation 100s linear infinite;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vh;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.1) 40%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes stars-animation {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+
+        /* Khung nội dung Glassmorphism */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 850px;
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6),
+                        0 0 30px rgba(212, 175, 55, 0.15);
+        }
+
+        h1 {
+            color: #f3e5ab;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 12px rgba(243, 229, 171, 0.4);
+            border-bottom: 1px solid rgba(243, 229, 171, 0.3);
+            padding-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #f1f5f9;
+            text-indent: 30px;
+        }
+
+        .quote {
+            text-indent: 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: #fce7f3;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 1rem;
+                text-indent: 20px;
+            }
+            .quote {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="container">
+        <h1>VI. TÔN GIẢ LA HẦU LA – TÌNH CẢM THIÊNG LIÊNG</h1>
+        
+        <p>Ngay từ giây phút vị Bồ Tát trên cung trời Đâu Suất vào thai của thân mẫu Da Du Đà La, giữa Ngài và Thái Tử Tất Đạt Đa, sau này là Đức Thế Tôn, đã hình thành một mối liên hệ đặc biệt, không thể diễn tả bằng lời. Đó là tình cha con gần gũi ấm áp, cũng là nghĩa ân sư vời vợi thiêng liêng. Đức Thế Tôn là người cha của muôn vạn loài chúng sinh, lòng từ bi của Người rải ban cho tất cả. Còn Ngài La Hầu La thì đón nhận tình thương bao la ấy, hạnh phúc trong tình thương ấy như cây rừng nương mình bên ngọn cao sơn. Trái tim của Ngài lúc nào cũng hướng về Thế Tôn, thiết tha, thương kính.</p>
+        
+        <p>Mùa mưa vừa đi qua, nắng đầu đông cùng làn gió se lạnh kéo về, đám đỗ quyên ửng hồng khoe sắc. Tinh xá Kỳ Viên như bừng tỉnh sau những tháng mưa dài. Hôm ấy, tinh xá từ sớm đã tấp nập khách Tăng từ các nơi đổ về thăm viếng và đảnh lễ Thế Tôn. Chiều tà buông xuống, tinh xá được thắp sáng bởi những ánh nến đèn. Đêm ấy, những mái am được ưu tiên dành cho các vị Tăng khách Tỳ kheo cao hạ, các vị Tỳ kheo trong tinh xá nhường lại chỗ của mình và chia nhau ra nghỉ dưới những tàng cây. Dù đông người nhưng không khí vẫn vô cùng yên ắng.</p>
+        
+        <p>Tới nửa đêm, Tôn giả La Hầu La xuất định sau thời công phu khuya, Ngài đến trải tấm tọa cụ và ngả lưng dưới mái hiên trước hương thất của Đức Phật. Hương thất nhỏ nhưng thoáng đãng, trang nghiêm trong ánh nến và mùi hương trầm tỏa. Ngài La Hầu La nằm đó, sương đêm rơi thấm qua từng lớp y. Thế nhưng trong lòng Ngài cảm thấy thật an lành, ấm áp.</p>
+        
+        <p>Giữa khung cảnh tĩnh mịch, chợt một trận cuồng phong nổi lên, Ma Vương xuất hiện. Ma Vương Vasavatti vẫn không thôi đố kỵ với Thế Tôn, luôn canh chừng từng giờ khắc để tìm cơ hội nhiễu loạn tâm Người. Thoáng thấy Tôn giả La Hầu La đang nằm trước hương thất, Vasavatti đinh ninh rằng thẳm sâu trong lòng mỗi con người, tình phụ tử luôn dạt dào sâu nặng, thân thể người con là máu thịt của đấng sinh thành và nếu người con có mệnh hệ gì thì sẽ làm người cha vô cùng buồn khổ. Vì vậy, Ma Vương quyết định tấn công Ngài La Hầu La để khiến Thế Tôn phải động lòng. Và khi đó, dã tâm của Ma Vương sẽ thành công.</p>
+        
+        <p>Nghĩ vậy rồi Ma Vương Vasavatti hóa hiện một con voi dữ khổng lồ, đôi ngà sắc bén cong lên như lưỡi kiếm. Con voi hung hãn với cặp mắt đỏ ngầu lao đến, mặt đất ầm ầm rung chuyển, hất lên những đám bụi mịt mù, giương chân định dẫm đạp Tôn giả La Hầu La.</p>
+        
+        <p>Thế Tôn đang tọa thiền trong hương thất, Người nhìn thấu suy nghĩ của Vasavatti ngay từ khi Vasavatti mới động niệm. Thấy Vasavatti sắp gây nghiệp bất thiện, Thế Tôn liền trải tâm từ hướng đến, Người nói vọng ra ngoài, từng chữ xoáy sâu vào tâm thức của Ma Vương. Giọng người trầm hùng mà nghiêm nghị:</p>
+        
+        <p class="quote">Này Vasavatti, dù trăm ngàn Ma Vương như ngươi cũng không thể làm kinh sợ được La Hầu La, một bậc đại hùng, đại trí tuệ đã hoàn toàn giải thoát.</p>
+        
+        <p>Voi dữ chợt khựng lại bởi tiếng Pháp âm rền vang đầy thần lực. Toàn thân mất hết đi vẻ cuồng uy ban đầu, hai chân sau khụy xuống, nó phủ phục ngay trước Tôn giả. Ma Vương Vasavatti gầm lên một tiếng vang trời, rồi biến mất trong làm khói xám mờ đục.</p>
+        
+        <p>Dưới mái hiên đơn sơ, Tôn giả La Hầu La vẫn nằm an yên, từng hơi thở vào ra trong bình lặng, sương mai đã trĩu trên đầu ngọn cỏ…</p>
+    </div>
+
+</body>
+</html>

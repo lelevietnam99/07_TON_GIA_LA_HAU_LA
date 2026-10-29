@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôn Giả La Hầu La – Phút Giây Chứng Ngộ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: #e0e6ed;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Hiệu ứng nền vũ trụ & tinh vân */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #87ceeb, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 230px 190px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 300px, #ffd700, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 350px 350px;
+            opacity: 0.7;
+            animation: stars-animation 100s linear infinite;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vh;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.1) 40%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes stars-animation {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+
+        /* Khung nội dung Glassmorphism */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 850px;
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6),
+                        0 0 30px rgba(212, 175, 55, 0.15);
+        }
+
+        h1 {
+            color: #f3e5ab;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 12px rgba(243, 229, 171, 0.4);
+            border-bottom: 1px solid rgba(243, 229, 171, 0.3);
+            padding-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #f1f5f9;
+            text-indent: 30px;
+        }
+
+        .quote {
+            text-indent: 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: #fce7f3;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 1rem;
+                text-indent: 20px;
+            }
+            .quote {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="container">
+        <h1>V. PHÚT GIÂY CHỨNG NGỘ CỦA TÔN GIẢ LA HẦU LA</h1>
+        
+        <p>Thời gian trôi qua, Tôn giả La Hầu La đã trở thành một vị Tỳ kheo đĩnh đạc và đầy uy đức. Một buổi sáng, bầu trời xanh trong vời vợi, Ngài ôm bình bát đi khất thực bên cạnh Thế Tôn. Đức Bổn Sư quán sát nhân duyên của người đệ tử. Người thấy trong đôi mắt sâu thẳm dưới vầng trán sáng ngời trí tuệ kia, sự giác ngộ đang đợi chờ phút giây bừng tỏ. Vì vậy, Đức Thế Tôn liền hướng về Tôn giả, thuyết lên một bài kệ:</p>
+        
+        <p class="quote">Này La Hầu La, con hãy lắng lòng nghe lời ta dạy. Thân này là vô thường, tâm này là vô thường. Không có gì của ta, không có gì là ta. Này La Hầu La, cả năm uẩn cũng đều như vậy: là thân thể, là cảm giác, là tâm tưởng, là suy luận, là ý thức, tất cả là vô thường, vô ngã, không phải là ta, không phải của ta.</p>
+        
+        <p>Thế Tôn vừa ngừng lời, Tôn giả La Hầu La bỗng dừng bước, một dòng chảy mãnh liệt cuồn cuộn dâng lên chiếm trọn tâm hồn. Ngài ngước nhìn Thế Tôn với niềm xúc động khôn tả:</p>
+        
+        <p class="quote">Bạch Đức Thế Tôn, xin Người cho phép con trở về tinh xá.</p>
+        <p class="quote">Này La Hầu La, vì sao con không đi khất thực nữa? – Thế Tôn hỏi.</p>
+        <p class="quote">Bạch Đức Thế Tôn, sau khi nghe đạo lý của Người, con không còn có thể nghĩ đến chuyện nào khác nữa.</p>
+        
+        <p>Thế Tôn im lặng đồng ý. Tôn giả La Hầu La lập tức quay trở lại tinh xá Kỳ Viên.</p>
+        
+        <p>Trong mái am giản dị được lợp bằng cỏ tranh, Ngài tọa thiền lặng lẽ miên mật từ sáng tới chiều. Bên ngoài am, từng cơn gió khẽ cuốn xào xạc lá khô trên đất, nắng chiều ngả màu nhạt dần… Khi hoàng hôn phủ xuống, Đức Thế Tôn thấy bóng người đệ tử vẫn đang tịch lặng trong thiền định, Người thuyết thêm bài pháp về hơi thở:</p>
+        
+        <p class="quote">Này La Hầu La, hãy biết rõ hơi thở, biết rõ hơi thở vào, hơi thở ra. Hơi thở vào dài, biết hơi thở vào dài. Hơi thở vào ngắn, biết hơi thở vào ngắn. Hơi thở ra dài, biết hơi thở ra dài. Hơi thở ra ngắn, biết hơi thở ra ngắn. Này La Hầu La hãy quán niệm hơi thở như thế sẽ được lợi ích lớn.</p>
+        
+        <p>Tôn giả La Hầu La vâng theo lời Thế Tôn chỉ bảo. Ngài nhẹ nhàng nhiếp tâm tiến sâu dần vào trong các tầng mức thiền định. Ngay trong đêm, Ngài hoát nhiên chứng ngộ Thánh quả A La Hán. Mái am nhỏ bừng sáng, ngoài trời trăng đã lên cao…</p>
+    </div>
+
+</body>
+</html>

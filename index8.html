@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IX. Thơ Tụng Về Tôn Giả La Hầu La</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: #e0e6ed;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Hiệu ứng nền vũ trụ & tinh vân */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #87ceeb, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 230px 190px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 300px, #ffd700, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 350px 350px;
+            opacity: 0.7;
+            animation: stars-animation 100s linear infinite;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vh;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.1) 40%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes stars-animation {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+
+        /* Khung nội dung Glassmorphism */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 850px;
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6),
+                        0 0 30px rgba(212, 175, 55, 0.15);
+            text-align: center;
+        }
+
+        h1 {
+            color: #f3e5ab;
+            font-size: 1.8rem;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 12px rgba(243, 229, 171, 0.4);
+            border-bottom: 1px solid rgba(243, 229, 171, 0.3);
+            padding-bottom: 15px;
+        }
+
+        .poem {
+            font-size: 1.15rem;
+            line-height: 2;
+            color: #f1f5f9;
+        }
+
+        .stanza {
+            margin-bottom: 24px;
+        }
+
+        .namo {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin-top: 30px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            .poem {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="container">
+        <h1>IX. THƠ TỤNG VỀ TÔN GIẢ LA HẦU LA</h1>
+        
+        <div class="poem">
+            <div class="stanza">
+                Thành tâm xin đảnh lễ Ngài<br>
+                Với lòng tôn kính ngập tràn vô biên<br>
+                Bậc A La Hán uy nghiêm<br>
+                Bảo vệ chân lý cho nghìn đời sau
+            </div>
+
+            <div class="stanza">
+                Dẹp tan cạm bẫy gươm đao<br>
+                Âm mưu hiểm độc phá tàn Đạo thiêng<br>
+                Dấu chân Ngài khắp mọi miền<br>
+                Dấn thân dũng mãnh giữ yên Tăng Đoàn
+            </div>
+
+            <div class="stanza">
+                Âm thầm chi phối lân bang<br>
+                Giữ gìn hòa khí làm an dân tình<br>
+                Đẹp hơn muôn ánh bình minh<br>
+                Trí tuệ ngời sáng chúng sinh hướng về
+            </div>
+
+            <div class="stanza">
+                Một lòng son sắt lời thề<br>
+                Hộ trì chánh Pháp vững bền mai sau<br>
+                Trời đêm tỏa rạng trăng sao<br>
+                Mật Hạnh Đệ Nhất thanh cao không lời
+            </div>
+
+            <div class="stanza">
+                Hiểm nguy gian khó chẳng ngơi<br>
+                Trung thành tuyệt đối muôn đời không phai<br>
+                Lời Phật như ánh nắng mai<br>
+                Soi vào khắp chốn vạn loài chúng sinh
+            </div>
+
+            <div class="stanza">
+                Kiếp người tăm tối điêu linh<br>
+                Bởi do ích kỷ vô minh đắm chìm<br>
+                Đường đời vất vả kiếm tìm<br>
+                Lợi danh phù phiếm, ái tình khổ đau
+            </div>
+
+            <div class="stanza">
+                Vô thường nào có đợi đâu<br>
+                Một mai rồi cũng bạc đầu xác xơ<br>
+                Thân tâm một thoáng sương mờ<br>
+                Trở về cát bụi hư vô trong chiều
+            </div>
+
+            <div class="stanza">
+                Phật cho con biết bao điều<br>
+                Hy sinh phụng sự thương yêu muôn loài<br>
+                Tin nhân quả, biết đúng sai<br>
+                Tu hành thúc liễm đường dài chẳng lui
+            </div>
+
+            <div class="stanza">
+                Bến bờ hạnh phúc an vui<br>
+                Ngập tràn tia nắng tinh khôi đẹp ngời<br>
+                Trải lòng rộng lớn vô bờ<br>
+                Trái tim ôm hết đất trời bao la
+            </div>
+
+            <div class="stanza">
+                Nguyện lòng sống rất vị tha<br>
+                Khiêm cung, kín đáo, chan hòa, bao dung<br>
+                Tìm về chân lý không cùng<br>
+                Con đường thiền định muộn trùng gian nan
+            </div>
+
+            <div class="stanza">
+                Lòng con xin quyết vững vàng<br>
+                Xiển dương chánh Pháp huy hoàng nghìn sau<br>
+                Thế giới tìm đến bên nhau<br>
+                Vui trong ánh sáng Đạo màu thiêng liêng.
+            </div>
+
+            <p class="namo">Nam Mô La Hầu La Tôn Giả (3 lần)</p>
+        </div>
+    </div>
+
+</body>
+</html>

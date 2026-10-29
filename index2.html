@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôn Giả La Hầu La – Theo Bước Từ Phụ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: #e0e6ed;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Hiệu ứng nền vũ trụ & tinh vân */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #87ceeb, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 230px 190px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 300px, #ffd700, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 350px 350px;
+            opacity: 0.7;
+            animation: stars-animation 100s linear infinite;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vh;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.1) 40%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes stars-animation {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+
+        /* Khung nội dung Glassmorphism */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 850px;
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6),
+                        0 0 30px rgba(212, 175, 55, 0.15);
+        }
+
+        h1 {
+            color: #f3e5ab;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 12px rgba(243, 229, 171, 0.4);
+            border-bottom: 1px solid rgba(243, 229, 171, 0.3);
+            padding-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #f1f5f9;
+            text-indent: 30px;
+        }
+
+        .quote {
+            text-indent: 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: #fce7f3;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 1rem;
+                text-indent: 20px;
+            }
+            .quote {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="container">
+        <h1>II. TÔN GIẢ LA HẦU LA – THEO BƯỚC TỪ PHỤ</h1>
+        
+        <p>Sau chín năm kể từ khi xuất gia và đắc thành quả vị Chánh Đẳng Chánh Giác, Đức Phật trở về thăm lại thành Ca Tỳ La Vệ. Cả kinh thành nao nức xôn xao, các ngôi nhà được trang hoàng với những hoa thơm và lụa mới. Trong cung điện, hoàng tộc và triều thần tề tựu trang nghiêm trong không gian sáng rực nến đèn và hương chiên đàn thơm ngát. Ai cũng cung kính một niềm xúc động trong giây phút nghinh đón Thế Tôn trở về. Hoàng tôn La Hầu La đứng với Mẫu thân nép sau tấm rèm, kín đáo hướng mắt dõi theo từng cử chỉ của Thế Tôn. Đức Thế Tôn rạng ngời với vầng hào quang tỏa ra ấm áp, Người bước đi thanh thoát mà trầm hùng, dẫn đầu hàng ngàn vị Tỳ kheo trong nếp áo nâu sòng. Cả không gian xung quanh dường như lắng đọng. Phụ Thân của Ngài vĩ đại quá, cao quý quá, Người sáng chói hơn tất cả những hình ảnh đẹp nhất Ngài có thể hình dung ra.</p>
+        
+        <p>Hoàng tôn La Hầu La muốn đến bên Thế Tôn thật nhanh, nhưng đôi chân Ngài vẫn đứng lặng. Chợt Mẫu hậu Da Du Đà La thì thầm: “Phụ Thân con về rồi, Người có một kho tàng cao quý lắm, con hãy đến xin kho tàng của Phụ Thân con đi!”. Hoàng tôn La Hầu La chưa hiểu hết được câu nói ấy, nhưng Ngài như được tiếp thêm động lực liền bước tới nơi Thế Tôn đang ngồi. Đức Thế Tôn hiền từ mà uy nghiêm, dáng hình Người giản dị và cao cả. Ngài La Hầu La ngước lên ngắm nhìn dung nhan rực rỡ. Lần đầu tiên trong đời bàn tay bé nhỏ đặt vào bàn tay Người, cảm giác thật bình an, vừa lạ lẫm vừa thân quen.</p>
+        
+        <p class="quote">Thưa Phụ Thân, dưới bóng mát của Người, con thật hạnh phúc!</p>
+        <p class="quote">Thưa Phụ Thân, xin Phụ Thân hãy cho con kho tàng của Người đi!</p>
+        
+        <p>Gió đầu thu dịu dàng mang theo hương thơm của những khóm hoa nở rộ nơi góc vườn Thượng Uyển. Thế Tôn trìu mến nắm tay Hoàng tôn, giọng Người trầm ấm:</p>
+        <p class="quote">Vậy con hãy theo Tôn giả Xá Lợi Phất (Sariputta) nhé.</p>
+        <p>Cả hoàng cung lặng người chứng kiến, những giọt nước mắt xúc động khẽ lăn dài.</p>
+        
+        <p>Tôn giả Xá Lợi Phất dắt tay Ngài La Hầu La đến dưới một tàng cây cổ thụ rợp bóng trên thềm cỏ ngát xanh. Tôn giả truyền giới sa di cho vị Hoàng tôn và hướng dẫn Ngài đọc những lời thề nguyện. Rồi Tôn giả Xá Lợi Phất cạo tóc cho Hoàng tôn. Từ giây phút đó, cuộc đời Ngài La Hầu La rẽ sang một con đường mới, con đường ngập ánh dương soi, con đường theo bước Từ Phụ…</p>
+    </div>
+
+</body>
+</html>
